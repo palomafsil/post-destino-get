@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Destinos</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de destinos</h1>
+            <small>Preencha os dados abaixo!!!</small>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>Novo destino</h2>
+                <form id="form-destino">
+                    <label for="title">Nome do destino:</label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+                    <label for="pais">pais:</label>
+                    <input id="pais" name="pais" type="text" required />
+
+                    <label for="tipo_destino">Tipo Destino:</label>
+                    <input id="tipo_destino" name="tipo_destino" type="text" required />
+
+                    <label for="melhor_epoca">Melhor Epoca:</label>
+                    <input id="melhor_epoca" name="melhor_epoca" type="text" required />
+
+                    <label for="custo_medio">Custo Medio:</label>
+                    <input id="custo_medio" name="custo_medio" type="numeric" required />
+
+                    <label for="imageUrl">URL da imagem (opcional):</label>
+                    <input id="imageUrl" name="imageUrl" type="url" />
+
+                    <button type="submit">Cadastrar destino</button>
+                </form>
+                <p id="resposta"></p>
+            </section>
+        </main>
+        <footer>
+            <p>Prática de formulários HTML.</p>
+        </footer>
+    </body>
+</html>
