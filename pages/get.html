@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Lista de destino</title>
-        <link rel="stylesheet" href="../css/get.css" />
-        <script src="../js/get.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <h1>Lista de destinos</h1>
-            <p>Veja abaixo a lista dos destinos</p>
-        </header> 
-        <main>
-            <p><a href="../index.html">Voltar para o cadastro</a></p>
-            <section id="conteiner-titulo-lista">
-                <h2 id="titulo-lista">Destinos cadatrados</h2>
-                <p>Os destinos são exibidos automaticamente ao abrir a página</p>
-                <p id="respostas"></p>
-                <ul id="lista-destinos"></ul>
-            </section>
-        </main>  
-        <!--Modelo para op JS copiar para cada destino-->
-        <template id="modelo-destino">
-            <li>
-                <section class="card-capa">
-                    <span class="sem-imagem">Imagem indisponivel</span>
-                    <img class="imagem-destino" alt="" />
-                </section>
-                <section class="card-conteudo">
-                    <h3 class="nome"></h3>
-                    <p><strong>Pais:</strong><span class="pais"></span></p>
-                    <p><strong>Tipo do destino:</strong><span class="destino"></span></p>
-                    <p><strong>Melhor epoca:</strong><span class="epoca"></span></p>
-                </section>
-            </li>
-        </template> 
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de destinos</title>
+    <link rel="stylesheet" href="../css/get.css" />
+    <script src="../js/get.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lista de destinos</h1>
+      <p>Veja abaixo a lista de destinos</p>
+    </header>
+    <main>
+      <p><a href="../index.html">Voltar para o cadastro</a></p>
+      <section id="container-titulo-lista">
+        <h2 id="titulo-lista">destinos cadastrados</h2>
+        <p>Os destinos são exibidos automaticamente ao abrir a página</p>
+        <p id="resposta"></p>
+        <ul id="lista-destino"></ul>
+      </section>
+    </main>
+
+    <!--Modelo para op JS copiar para cada heroi-->
+    <template id="modelo-destino">
+      <li>
+        <section class="card-capa">
+          <img class="imagem-destino" alt="" />
+        </section>
+        <section class="card-conteudo">
+          <h3 class="nome"></h3>
+          <p><strong class="pais">pais:</strong> <span > </span></p>
+          <p><strong class="tipo_destino">tipo_destino:</strong> <span > </span></p>
+          <p><strong class="melhor_epoca">melhor_epoca:</strong> <span > </span></p>
+          <p><strong class="custo_medio">custo_medio:</strong> <span > </span></p>
+        </section>
+      </li>
+    </template>
+  </body>
 </html>
